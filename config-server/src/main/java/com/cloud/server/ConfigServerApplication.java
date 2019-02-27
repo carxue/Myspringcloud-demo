@@ -8,9 +8,9 @@ import org.springframework.context.annotation.ComponentScan;
 @EnableConfigServer
 @SpringBootApplication
 @ComponentScan(basePackages = { "com.cloud.*" })
-public class ConfigApplication {
+public class ConfigServerApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ConfigApplication.class, args);
+		SpringApplication.run(ConfigServerApplication.class, args);
 	}
 }
