@@ -1,0 +1,8 @@
+com\cloud\service\impl\HelloServiceImpl$1.class
+com\cloud\service\impl\HelloServiceImpl.class
+com\cloud\config\HystrixRequestContextServletFilter.class
+com\cloud\hystrix\cache\UserCommand.class
+com\cloud\controller\ConsumerController.class
+com\cloud\server\SpringCloudRibbonApplication.class
+com\cloud\config\RocketMQHealthIndicator.class
+com\cloud\service\HelloService.class

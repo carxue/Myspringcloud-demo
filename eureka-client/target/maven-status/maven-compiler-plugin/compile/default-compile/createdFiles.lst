@@ -1,0 +1,3 @@
+com\cloud\server\SpringCloudClientApplication.class
+com\cloud\config\RocketMQHealthIndicator.class
+com\cloud\controller\HelloController.class
