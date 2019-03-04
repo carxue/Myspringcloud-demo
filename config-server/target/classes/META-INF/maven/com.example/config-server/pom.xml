@@ -32,6 +32,18 @@
 			<artifactId>spring-cloud-config-server</artifactId>
 		</dependency>
 		<!-- config end -->
+		<!-- 添加安全校验 security依赖包 -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
+		</dependency>
+		<!-- security end -->
+		<!-- config 高可用配置依赖eureka包-->
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-eureka</artifactId>
+		</dependency>
+		<!-- eureka end -->
 	</dependencies>
 	<dependencyManagement>
 		<dependencies>
