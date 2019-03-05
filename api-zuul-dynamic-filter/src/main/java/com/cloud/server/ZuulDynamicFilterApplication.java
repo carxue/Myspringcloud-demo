@@ -12,10 +12,10 @@ import org.springframework.context.annotation.ComponentScan;
 @EnableZuulProxy
 @SpringBootApplication
 @ComponentScan(basePackages = { "com.cloud.*" })
-public class ZuulDynamicApplication {
+public class ZuulDynamicFilterApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ZuulDynamicApplication.class, args);
+		SpringApplication.run(ZuulDynamicFilterApplication.class, args);
 	}
 
 	@Bean
