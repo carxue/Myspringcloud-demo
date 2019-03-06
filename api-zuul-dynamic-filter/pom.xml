@@ -38,10 +38,12 @@
 			<artifactId>spring-cloud-starter-eureka</artifactId>
 		</dependency>
 		<!-- eureka end -->
+		<!--请求过滤器的加载需要使用jvm实现groovy  -->
 		<dependency>
-    <groupId>org.codehaus.groovy</groupId>
-    <artifactId>groovy-all</artifactId>
-</dependency>
+			<groupId>org.codehaus.groovy</groupId>
+			<artifactId>groovy-all</artifactId>
+		</dependency>
+		<!--groovy end  -->
 	</dependencies>
 	<dependencyManagement>
 		<dependencies>
