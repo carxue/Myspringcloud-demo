@@ -59,6 +59,12 @@
 			<artifactId>spring-boot-starter-actuator</artifactId>
 		</dependency>
 		<!--actuator end -->
+		<!-- 引入amqp依赖 -->
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-bus-amqp</artifactId>
+		</dependency>
+		<!-- amqp end -->
 	</dependencies>
 	<dependencyManagement>
 		<dependencies>
