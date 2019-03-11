@@ -1,7 +1,0 @@
-D:\网络资源下载\springcloud\ribbon-consumer\src\main\java\com\cloud\controller\ConsumerController.java
-D:\网络资源下载\springcloud\ribbon-consumer\src\main\java\com\cloud\config\RocketMQHealthIndicator.java
-D:\网络资源下载\springcloud\ribbon-consumer\src\main\java\com\cloud\server\SpringCloudRibbonApplication.java
-D:\网络资源下载\springcloud\ribbon-consumer\src\main\java\com\cloud\service\impl\HelloServiceImpl.java
-D:\网络资源下载\springcloud\ribbon-consumer\src\main\java\com\cloud\config\HystrixRequestContextServletFilter.java
-D:\网络资源下载\springcloud\ribbon-consumer\src\main\java\com\cloud\hystrix\cache\UserCommand.java
-D:\网络资源下载\springcloud\ribbon-consumer\src\main\java\com\cloud\service\HelloService.java
