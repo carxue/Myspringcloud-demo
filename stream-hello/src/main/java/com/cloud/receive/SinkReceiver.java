@@ -5,14 +5,16 @@ import org.springframework.cloud.stream.annotation.EnableBinding;
 import org.springframework.cloud.stream.annotation.StreamListener;
 import org.springframework.cloud.stream.messaging.Sink;
 
-@EnableBinding(Sink.class)
+import com.cloud.sender.SinkSender;
+
+@EnableBinding({Sink.class,SinkSender.class})
 public class SinkReceiver {
 
 	private final Logger logger = Logger.getLogger(SinkReceiver.class);
 
 	@StreamListener(Sink.INPUT)
 	public void receive(Object payload) {
-		logger.info("Receive:" + payload);
+		logger.info("=====================Receive:" + payload);
 	}
 
 }
