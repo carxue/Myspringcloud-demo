@@ -45,13 +45,9 @@ public class StreamTest {
 		output1.send(MessageBuilder.withPayload("xuekui111").build());
 //		output2.send(MessageBuilder.withPayload("xuekui222").build());
 	}
-<<<<<<< HEAD
 	
 	@Test
 	public void inputUser() throws Exception {
 		outputUser.send(MessageBuilder.withPayload("{\"name\":\"carlxue\",\"age\":22}").build());
 	}
-=======
->>>>>>> branch 'master' of git@github.com:carxue/Myspringcloud-demo.git
-
 }
