@@ -18,8 +18,8 @@ import com.cloud.bean.User;
 public class UserSourceSender {
 	private final Logger logger = Logger.getLogger(UserSourceSender.class);
 	
-//	@Bean
-//	@InboundChannelAdapter(value = MySink.REPLAY_SOURCE_CHANNEL, poller = @Poller(fixedDelay = "4000"))
+	@Bean
+	@InboundChannelAdapter(value = MySink.REPLAY_SOURCE_CHANNEL, poller = @Poller(fixedDelay = "4000"))
 	public MessageSource<User> timerMessageSource1() {
 		logger.info("11111111111111111发送消息给消费者:"+MySink.REPLAY_SOURCE_CHANNEL);
 //		return () -> new GenericMessage<>("{\"name\":\"carlxue\",\"age\":22}");
