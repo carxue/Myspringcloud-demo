@@ -14,15 +14,15 @@ public class UserSourceSender {
 	private final Logger logger = Logger.getLogger(UserSourceSender.class);
 	
 	@Bean
-	@InboundChannelAdapter(value = MySink.REPLAY_SOURCE_CHANNEL, poller = @Poller(fixedDelay = "2000"))
+	@InboundChannelAdapter(value = MySink.REPLAY_SOURCE_CHANNEL, poller = @Poller(fixedDelay = "4000"))
 	public MessageSource<String> timerMessageSource1() {
 		logger.info("11111111111111111发送消息给消费者:"+MySink.REPLAY_SOURCE_CHANNEL);
 		return () -> new GenericMessage<>("{\"name\":\"carlxue\",\"age\":22}");
 	}
 	
-//	@StreamListener(MySink.REPLAY_SINK_CHANNEL)
-//	public void receive(Object payload) {
-//		logger.info("4444444@sendto返回的回执为:=====================Receive:" + payload);
-//	}
+	@StreamListener(MySink.REPLAY_SINK_CHANNEL)
+	public void receive(Object payload) {
+		logger.info("4444444@sendto返回的回执为:=====================Receive:" + payload);
+	}
 
 }
