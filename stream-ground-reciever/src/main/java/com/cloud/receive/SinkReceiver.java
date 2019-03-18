@@ -14,9 +14,9 @@ public class SinkReceiver {
 	private final Logger logger = Logger.getLogger(SinkReceiver.class);
 
 	@StreamListener(MySink.REPLAY_SINK_CHANNEL)
-//	@SendTo(MySink.REPLAY_SINK_CHANNEL)
-	public void receive(User user) {
-		logger.info("22222222222=====================Receive:" + user);
-//		return "33333333 receive smg :"+user.toString();
+	@SendTo(MySink.REPLAY_SOURCE_CHANNEL)
+	public String receive(User payload) {
+		logger.info("22222222222=====================Receive:" + payload);
+		return "33333333 receive smg :"+payload.toString();
 	}
 }
