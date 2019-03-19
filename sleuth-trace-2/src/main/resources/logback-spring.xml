@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+    <include resource="org/springframework/boot/logging/logback/defaults.xml"/>
+	<springProperty scope="context" name="springAppName" source="spring.application.name"/>
+    <!-- 日志在工程中的输出位置 -->
+    <property name="LOG_FILE" value="${BUILD_FOLDER:-build}/${springAppName}"/>
+    <property name="CONSOLE_LOG_PATTERN" value="%clr(%d{yyyy-MM-dd HH:mm:ss:SSS})"/>
+    
+    
+    
+    <!-- 每天产生一个日志 -->
+    <appender name="FILE_APPENDER" class="ch.qos.logback.core.rolling.RollingFileAppender">
+    <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+        <fileNamePattern>${LOG_HOME}/${FILE_NAME}.%d{yyyyMMdd}.log</fileNamePattern>
+        <maxHistory>30</maxHistory>
+        <totalSizeCap>1GB</totalSizeCap>
+    </rollingPolicy>
+    <layout class="PatternLayout"> <!-- ch.qos.logback.classic.PatternLayout -->
+        <Pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{36} [%inst] [%trans] - %msg%n</Pattern>
+    </layout>
+</appender>
+
+    <root level="DEBUG">
+        <appender-ref ref="FILE_APPENDER"/>
+    </root>
+    <logger name="com.eaxl.goods.dao" level="DEBUG"/>
+
+</configuration>
