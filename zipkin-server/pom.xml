@@ -38,6 +38,16 @@
 			<scope>runtime</scope><!-- 一定使用runtime不然项目无法启动很多依赖类没有加载进来 -->
 		</dependency>
 		<!-- zipkin end -->
+		<!-- zipkin-stream可以使其从消息中间件获取跟踪消息 -->
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-sleuth-zipkin-stream</artifactId>
+		</dependency>
+		<dependency><!--添加需要的绑定器rabbit  -->
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-stream-rabbit</artifactId>
+		</dependency>
+		<!-- zipkin-stream end -->
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-dependencies</artifactId>

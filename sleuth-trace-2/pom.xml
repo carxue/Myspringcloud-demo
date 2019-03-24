@@ -51,12 +51,23 @@
 		    <version>4.6</version>
 		</dependency>
 		<!-- logstash end -->
-		<!-- spring-cloud-sleuth-zipkin -->
-		<dependency>
+		<!-- spring-cloud-sleuth-zipkin ①①①①①①添加zipkin的服务实现http方式收集跟踪日志-->
+		<!--如果使用②消息中间件收集需要将这里的http方式收集注释掉  -->
+		<!-- <dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-sleuth-zipkin</artifactId>
-		</dependency>
+		</dependency> -->
 		<!-- spring-cloud-sleuth-zipkin end -->
+		<!--stream&rabbit消息中间件方式实现日志收集②②②②②②②②  -->
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-sleuth-stream</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-stream-rabbit</artifactId>
+		</dependency>
+		<!-- stream&rabbit end -->
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-dependencies</artifactId>
