@@ -9,7 +9,7 @@ import com.netflix.hystrix.HystrixCommandKey;
 import com.netflix.hystrix.HystrixRequestCache;
 import com.netflix.hystrix.strategy.concurrency.HystrixConcurrencyStrategyDefault;
 
-public class UserCommand extends HystrixCommand<String>{
+public class UserCommand extends HystrixCommand<String>{//
 	
 	private static final HystrixCommandKey GETTER_KEY = HystrixCommandKey.Factory.asKey("CommandKey");
 	
