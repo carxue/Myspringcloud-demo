@@ -16,7 +16,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.cloud.bean.User;
 import com.google.gson.Gson;
-import com.netflix.hystrix.HystrixCommandProperties;
 
 @RestController
 public class HelloController {
